@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Fit Assignment</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>FIT<br>Assignment</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Person 1 </a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> Person 2 </a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">SDLC</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> Research Paper</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>FIT Assignment</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Webpage Development</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Person 1 .</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding" >
+    <div class="w3-half">
+      <img src="lakshay  profile pic.jpg" style="width:100%" onclick="onClick(this)" alt="OOPS SOME ERROR IS OCCURED">
+	  
+      
+    </div>
+
+    <div class="w3-half">
+	<div>
+      <h2><u>Name : </u></h2> <h4 class="w3-large w3-text-grey w3-hide-medium" >Lakshay Rohilla</h4>
+	  <h2 ><u>Interest : </u></h2> <h4 class="w3-large w3-text-grey w3-hide-medium" >* Developing websites <br> * Creating youtube videos <br> * Exploring world <br> * Care my love once    </h4>
+	  <h2><u>Projects : </u></h2> <h4 class="w3-large w3-text-grey w3-hide-medium" >* Successfully Developed Android real time application named “Food Wastage Reduction Through Donation”<br> * Successfully Developed “Online Voting System” based on Java & Advance Java.
+															<br> * Successfully Develpoped an "Ecommerce Website" using Java & Spring </h4>
+	  <h2> <u>Awards & Achievements : </u></h2> <h4 class="w3-large w3-text-grey w3-hide-medium" > * Secured 3st position for developing Real Time Android Application. <br>
+	  * Awaded by VMDD Technology for “Robotics & Embedded System Engineer”.<br>* Certified By IIT Bombay in “C” Language.
+	  <br>* Certified By IIT Bombay in “JAVA” Language. <br> *  Certified By NPTEL for National Programming Aptitude Test(NPAT)</h4>
+	  </div>
+    </div>
+	
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+    <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Person 2 .</b></h1>
+    <hr style="width:50px;border:5px solid red ;" class="w3-round">
+    
+																	<!--  lol -->
+	<div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="har.jpg" style="width:100%" onclick="onClick(this)" alt="OOPS SOME ERROR IS OCCURED">
+      
+    </div>
+
+    <div class="w3-half">
+	<div>
+      <h2><u>Name : </u></h2> <h4 class="w3-large w3-text-grey w3-hide-medium">Harsimran Kaur</h4>
+	  <h2><u>Interest : </u></h2> <h4 class="w3-large w3-text-grey w3-hide-medium">* Web Designing<br> * Big Data    </h4>
+	  <h2><u>Projects : </u></h2> <h4 class="w3-large w3-text-grey w3-hide-medium">* Successfully designed e-commerce website "fashionreet. Com" -- online fashion store
+															  </h4>
+	  <h2> <u>Internship : </u></h2> <h4 class="w3-large w3-text-grey w3-hide-medium"> * 45 days internship in digital marketing in Ducat, noida . <br>
+	    <br> * 30 days  internship in big Data  by stoneviere technology  </h4>
+	  </div>
+    </div>
+	
+  </div>
+												<!--  lol -->
+												
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Software Development Life Cycle (SDLC).</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+	<img src="sdlc img.jpg" style="width:100%" onclick="onClick(this)" alt="OOPS SOME ERROR IS OCCURED">
+	
+	 <h3> <u>What is Software Development Life Cycle (SDLC) .</u></h3>
+      <p class="w3-large w3-text-grey w3-hide-medium">* The software development life cycle (SDLC) is a framework defining tasks performed at each step in the software development process. <br>
+	* SDLC is a structure followed by a development team within the software organization. <br>
+	* It consists of a detailed plan describing how to develop, maintain and replace specific software.
+    </p>
+    <br>
+	<h3><u>Steps</u> </h3>
+
+	<h4 ><u>1. Planning : </u></h4> <p class="w3-large w3-text-grey w3-hide-medium">The most important parts of software development, requirement gathering or requirement analysis are usually done by the most skilled and experienced software engineers in the organization. After the requirements are gathered from the client, 
+	a scope document is created in which the scope of the project is determined and documented.</p>
+	
+	<h4 ><u>2. Implementation : </u></h4> <p class="w3-large w3-text-grey w3-hide-medium">The software engineers start writing the code according to the client's requirements.</p>
+	
+	<h4 ><u>3. Testing : </u></h4> <p class="w3-large w3-text-grey w3-hide-medium">This is the process of finding defects or bugs in the created software.</p>
+	
+	<h4 ><u>4. Documentation : </u></h4> <p class="w3-large w3-text-grey w3-hide-medium"> Every step in the project is documented for future reference and for the improvement of the software in the development process. 
+	The design documentation may include writing the application programming interface (API).</p>
+	
+	<h4 ><u>5. Deployment : </u></h4> <p class="w3-large w3-text-grey w3-hide-medium">The software is deployed after it has been approved for release.</p>
+	
+	<h4 ><u>6. Maintaining : </u></h4> <p class="w3-large w3-text-grey w3-hide-medium"> Software maintenance is done for future reference.
+	Software improvement and new requirements (change requests) can take longer than the time needed to create the initial development of the software.</p>
+  </div>
+  
+  
+
+  <!-- The Team -->
+  
+  <!--<div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>John Doe</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Jane Doe</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Architect</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Analysis Methods of Workflow Execution Data Based on Data Mining.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h2> <u><b>INTRODUCTION :</b></u></h2>
+	<p class="w3-large w3-text-grey w3-hide-medium">Workflow management system provides valuable
+data source for real operation evaluation as information system of operation process
+definition, execution and management. These data record all process and execution focus in
+system, including human, resource, application and operation logic, and so on. These data is
+true and real-time renewed relative to simulation data. So, workflow execution data is important component
+part of enterprise operation evaluation system.</p>
+
+
+<h2> <u><b>Analysis Method of Workflow Execution Data :</b></u></h2>
+<h3>A. Data Warehouse Technology</h3>
+<p class="w3-large w3-text-grey w3-hide-medium">  In present day, more and more enterprises realize to sufficiently adopt only and mine present data in order to realize the best enterprise benefits. Traditional application system of
+database faces the design of operation work. It reduces working intensity of idiographic manipulator, but the leader of enterprise is not possesses relevant system.Enterprise needs new technology to compensate insufficiency of former data system 
+and need to integrate data gathered widely to data warehouse in order to pick up useful information and help them make a timely and corrective judge in operation management and development. Basic system structure of data warehouse is shown as figure </p>
+ <img src="paper img.png" style="width:100%" onclick="onClick(this)" alt="OOPS SOME ERROR IS OCCURED">
+ <p class="w3-large w3-text-grey w3-hide-medium">  * The aim of data warehouse is to build a systemic data storage environment and separate
+plentiful data needed by analysis and decision-making from traditional operation condition.<br>
+ * Data warehouse system includes warehouse technology and on-line analytical processing (OLAP) technology
+and data mining technology (DM).</p>
+
+<h3>B. OLAP</h3>
+<p class="w3-large w3-text-grey w3-hide-medium"> OLAP is a query technology for data warehouse. It applies specially to analyze fast large
+numbers of data. OLAP is a concept of user interface rather than a data storage technology.
+OLAP can make various analysis action chipping slice, chipping piece, rotating for data of
+data warehouse and make user observe data of data warehouse from multi-angle and multi-
+side, consequently, know deeply information of data. OLAP includes
+multidimensional OLAP (MOLAP), relational OLAP (ROLAP) and hybrid OLAP (HOLAP).</p>
+
+<h3>C. Data Mining </h3>
+<p class="w3-large w3-text-grey w3-hide-medium"> Data mining is a process distilled connotative, unknown beforehand, potential useful
+information and knowledge from plentiful, incomplete, noisy, fuzzy and stochastic database.
+It processes data and makes maximum value and transfer information in data to useful
+knowledge.</p>
+
+<h2> <u><b>Conclusion :</b></u></h2>
+<p class="w3-large w3-text-grey w3-hide-medium"> This paper put forward data mining analysis method of workflow execution data at data warehouse of workflow system. Data mining analysis technology analyzing and mining
+ data of workflow log can effectively evaluate operation property of information system and duly find fault and potential problem existing information system.</p>
+
+
+
+
+
+  </div>
+
+  <div class="w3-row-padding">
+  
+    <!--<div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16">Floorplanning</li>
+        <li class="w3-padding-16">10 hours support</li>
+        <li class="w3-padding-16">Photography</li>
+        <li class="w3-padding-16">20% furniture discount</li>
+        <li class="w3-padding-16">Good deals</li>
+        <li class="w3-padding-16">
+          <h2>$ 199</h2>
+          <span class="w3-opacity">per room</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>-->
+        
+    <div>
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Information About Paper</li>
+        <li class="w3-padding-16"><b><u>Published in  : </u></b> 2009 Second International Workshop on Knowledge Discovery and Data Mining</li>
+        <li class="w3-padding-16"><b><u>Authors :  </u></b>Feng Lei,Chen Hexin
+</li>
+        <li class="w3-padding-16"><b><u>Date of Conference : </u></b> 23-25 Jan. 2009</li>
+        <li class="w3-padding-16"><b><u>Publisher : </u></b> IEEE</li>
+        <li class="w3-padding-16"><b><u>Conference Location : </u></b> Moscow, Russia</li>
+        <li class="w3-padding-16">
+          <h3><b><u>Reference</u></b></h3>
+          <span class="w3-opacity">* Jiawei H, Micheline K, "Data Ming: Concepts and Techniques", Simon Fraser University, Morgan Kaufmann Publishers, 2000
+Google Scholar 
+</span><br>
+		  <span class="w3-opacity">* Fu Yongjiao, Data Mining: Tasks, "Techniques and Applications", IEEE Potentials, 1997, 16(4): 18-20
+View Article Full Text: PDF (838KB) Google Scholar 
+</span><br>
+		  <span class="w3-opacity">* Huang, G.H, and Mak, K.L, "Web-integrated manufacturing: recent developments and emerging issues", INT.J Computer integrated manufacturing, 2002, 14(1): 3-13
+CrossRef  Google Scholar 
+</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-red w3-padding-large w3-hover-black">Visit</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div  class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-padding-32 w3-black w3-center w3-margin-top" style="margin-top:75px;padding-right:58px">
+  <h5 style="padding-left:360px" >Find Us On</h5>
+  <div style="padding-left:360px"  class="w3-xlarge w3-padding-16">
+  <a href="https://www.youtube.com/channel/UCJAhqkmJfwmVi1qYM1ZteOQ"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+  <a href="https://www.facebook.com/rlakshay14"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+	
+  </div>
+  <p style="padding-left:360px">Copyright Reserved LBSIM</p>
+</footer>
+
+
+
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Sponsered by <a href="https://www.youtube.com/channel/UCJAhqkmJfwmVi1qYM1ZteOQ" title="W3.CSS" target="_blank" class="w3-hover-opacity">Motohead Lakshay</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
